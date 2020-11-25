@@ -1,0 +1,16 @@
+<div class="titulo"> {{data.titulo}} </div>
+
+
+<mat-form-field style="float: left;margin-top: 20px;width: 300px;" appearance="outline">
+  <mat-label>{{data.texto}}</mat-label>
+        <input matInput placeholder="{{data.texto}}" [(ngModel)]="descricao">
+</mat-form-field>
+
+<div style="float: left;" >
+  <button mat-button (click)="salvar()">
+      Salvar
+  </button>
+  <button mat-button [mat-dialog-close]>
+      Fechar
+  </button>
+</div>
